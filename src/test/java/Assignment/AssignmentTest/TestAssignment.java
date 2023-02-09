@@ -44,6 +44,9 @@ public class TestAssignment {
 		int ycord = point.getY();
 		System.out.println("Position of the webelement from top side is "+ycord +" pixels");
 		
+		driver.findElement(By.xpath("(//div[@role='presentation'])[5]")).click();
+		driver.findElement(By.xpath("//button[@data-testid='account-menu-logout']")).click();
+		driver.findElement(By.id("logout-submit")).click();
 		
 		driver.close();
 	}
